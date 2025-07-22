@@ -6,6 +6,12 @@ body {
   font-family: "Inter";
   font-style: normal;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .top-header {
   background-color: white;
   position: sticky;
@@ -20,20 +26,6 @@ body {
 
 .top-header .name {
   font-size: 26px;
-}
-
-.header img {
-  height: 100%;
-  width: 100%;
-}
-.carousel-item {
-  height: 100%;
-  width: 100%;
-}
-
-.carousel-item :active {
-  height: 100%;
-  width: 100%;
 }
 
 .nav ul {
