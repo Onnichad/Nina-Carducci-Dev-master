@@ -28,18 +28,18 @@ img {
   font-size: 26px;
 }
 
-.nav ul {
+nav ul {
   display: flex;
   list-style-type: none;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.nav li {
+nav li {
   padding-inline: 10px;
 }
 
-.nav a {
+nav a {
   text-decoration: none;
   color: #000;
 }
@@ -104,7 +104,7 @@ img {
   text-align: center;
   padding-block: 2em;
 }
-.gallery .nav {
+.gallery nav {
   justify-content: center;
 }
 .nav-pills .nav-link.active,
