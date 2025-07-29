@@ -91,6 +91,12 @@ nav a {
   border-radius: 0.5rem;
 }
 
+.visually-hidden[style] {
+  opacity: 0 !important;
+  color: inherit !important;
+  background-color: transparent !important;
+}
+
 .picture img {
   width: 100%;
   height: fit-content;
