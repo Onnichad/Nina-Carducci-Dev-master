@@ -73,8 +73,12 @@ nav a {
   white-space: nowrap;
   border: 0;
 }
-.carousel-item img {
-  opacity: 0.7 !important;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) brightness(1.5);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
 
 .visually-hidden[style] {
