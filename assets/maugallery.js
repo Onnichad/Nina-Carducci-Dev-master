@@ -179,7 +179,7 @@
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
       }" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
                             ${
@@ -198,6 +198,7 @@
                 </div>
             </div>`);
     },
+
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
@@ -236,3 +237,14 @@
     },
   };
 })(jQuery);
+
+$(document).on("shown.bs.modal", "#galleryLightbox", function () {
+  const img = $(this).find(".lightboxImage");
+  img.on("load", function () {
+    const modalDialog = $(this).closest(".modal-dialog");
+    modalDialog.css({
+      width: this.naturalWidth,
+      maxWidth: "90%", // pour éviter les débordements
+    });
+  });
+});

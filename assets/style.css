@@ -119,6 +119,48 @@ nav a {
   width: 80%;
   font-size: 14px;
 }
+.modal {
+  text-align: center;
+}
+
+.modal::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  max-width: 100%;
+  max-height: 90vh;
+  text-align: left;
+}
+
+.modal-content {
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 0;
+}
+
+.modal-body {
+  padding: 0;
+  text-align: center;
+  background-color: white;
+}
+
+.modal-body img.lightboxImage {
+  display: block;
+  max-width: 100%;
+  max-height: 90vh;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
 
 #gallery {
   /*	min-height: 100vh; */
