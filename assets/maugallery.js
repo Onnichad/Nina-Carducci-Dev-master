@@ -221,7 +221,6 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      //+ active = reapplique active au tag selectionne
       $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
