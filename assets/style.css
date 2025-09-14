@@ -324,7 +324,7 @@ input[type="submit"] {
   }
   #about,
   #contact {
-    padding-inline: 2em;
+    padding-inline: 1em;
     padding-block: 2em;
   }
   form {
